@@ -1,0 +1,39 @@
+{
+    "name": "sloka/framework",
+    "description": "PHP MVC Framework made in INDIA",
+    "version": "1.0.0",
+    "type": "project",
+    "keywords": ["sloka"],
+    "homepage": "https://sloka.lightracers.in",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lightracers Consulting",
+            "email": "info@lightracers.in"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-openssl": "*",
+        "ext-pdo": "*",
+        "ext-json": "*",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "robmorgan/phinx": "dev-master",
+        "squizlabs/php_codesniffer": "dev-master",
+        "friendsofphp/php-cs-fixer": "dev-master",
+        "phpunit/phpunit": "dev-master",
+        "pdepend/pdepend": "^2.5",
+        "phpmd/phpmd": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "App/",
+            "Api\\": "Api/",
+            "Cli\\": "Cli/",
+            "Framework\\": "Framework/"
+        }
+    },
+    "minimum-stability": "stable"
+}

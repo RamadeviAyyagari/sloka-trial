@@ -1,0 +1,22 @@
+language: php
+dist: xenial
+
+php:
+  - 7.2
+
+env:
+  - DB=pdo/mysql
+
+sudo: false
+
+before_script:
+  - sh -c "composer install --dev --no-progress"
+
+script: 
+  - vendor/bin/phpcs
+  - vendor/bin/phpunit
+#  - vendor/bin/phpmd Api,App,Cli,Framework text cleancode,codesize,controversial,design,naming,unusedcode
+
+branches:
+  only:
+    - master

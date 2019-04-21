@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+         cacheResult="false"
+         colors="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false">
+    <testsuites>
+        <testsuite name="Clarinet Test Suite">
+            <directory suffix="Test.php">App/Tests</directory>
+            <directory suffix="Test.php">Api/Tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
